@@ -3,7 +3,7 @@ module.exports = {
   entry: './src/app.js',
   output: {
     path: __dirname,
-    filename: './build/main.js'
+    filename: './public/main.js'
   },
   resolve: {
     extensions: ['.js', '.jsx', '.css']
