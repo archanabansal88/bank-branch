@@ -5,10 +5,9 @@ const Dropdown = ({data, onChange, selected}) => {
     <div className='field'>
       <div className='control'>
         <div className='select'>
-          <select onChange={onChange}>
+          <select onChange={onChange} value={selected}>
             {data.map((city, index) => {
-              const isSelected = selected === city
-              return <option key={index} selected={isSelected} >{city}</option>
+              return <option key={index}>{city}</option>
             })}
           </select>
         </div>
